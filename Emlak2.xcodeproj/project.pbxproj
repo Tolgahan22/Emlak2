@@ -13,6 +13,14 @@
 		417F281F2982FE4700D4CA1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 417F281D2982FE4700D4CA1A /* Main.storyboard */; };
 		417F28212982FE4900D4CA1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 417F28202982FE4900D4CA1A /* Assets.xcassets */; };
 		417F28242982FE4900D4CA1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 417F28222982FE4900D4CA1A /* LaunchScreen.storyboard */; };
+		417F282C298301A300D4CA1A /* CikisVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417F282B298301A300D4CA1A /* CikisVc.swift */; };
+		417F283629832CE600D4CA1A /* GorevVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417F283529832CE600D4CA1A /* GorevVc.swift */; };
+		417F283829832D2A00D4CA1A /* DetayVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417F283729832D2A00D4CA1A /* DetayVc.swift */; };
+		417F283A29832D5600D4CA1A /* EklemeVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417F283929832D5600D4CA1A /* EklemeVc.swift */; };
+		417F283C29832D7B00D4CA1A /* AnasayfaVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417F283B29832D7B00D4CA1A /* AnasayfaVc.swift */; };
+		417F283E29832D9800D4CA1A /* AdminVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417F283D29832D9800D4CA1A /* AdminVc.swift */; };
+		417F284329832E5200D4CA1A /* GorevVerVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417F284229832E5200D4CA1A /* GorevVerVc.swift */; };
+		417F28452983315300D4CA1A /* AnasayfaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417F28442983315200D4CA1A /* AnasayfaCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		417F28202982FE4900D4CA1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		417F28232982FE4900D4CA1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		417F28252982FE4900D4CA1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		417F282B298301A300D4CA1A /* CikisVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CikisVc.swift; sourceTree = "<group>"; };
+		417F283529832CE600D4CA1A /* GorevVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GorevVc.swift; sourceTree = "<group>"; };
+		417F283729832D2A00D4CA1A /* DetayVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetayVc.swift; sourceTree = "<group>"; };
+		417F283929832D5600D4CA1A /* EklemeVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EklemeVc.swift; sourceTree = "<group>"; };
+		417F283B29832D7B00D4CA1A /* AnasayfaVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnasayfaVc.swift; sourceTree = "<group>"; };
+		417F283D29832D9800D4CA1A /* AdminVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminVc.swift; sourceTree = "<group>"; };
+		417F284229832E5200D4CA1A /* GorevVerVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GorevVerVc.swift; sourceTree = "<group>"; };
+		417F28442983315200D4CA1A /* AnasayfaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnasayfaCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +72,95 @@
 		417F28162982FE4700D4CA1A /* Emlak2 */ = {
 			isa = PBXGroup;
 			children = (
+				417F283F29832DF400D4CA1A /* GorevVer */,
+				417F283329832C4A00D4CA1A /* Giris */,
+				417F283229832C3800D4CA1A /* Gorev */,
+				417F283129832C2200D4CA1A /* Detay */,
+				417F283029832C1000D4CA1A /* Ekleme */,
+				417F282F29832C0400D4CA1A /* Anasayfa */,
+				417F282E29832BF900D4CA1A /* Admin */,
+				417F282D29832BED00D4CA1A /* Cikis */,
 				417F28172982FE4700D4CA1A /* AppDelegate.swift */,
 				417F28192982FE4700D4CA1A /* SceneDelegate.swift */,
-				417F281B2982FE4700D4CA1A /* ViewController.swift */,
+				417F283429832C9300D4CA1A /* GorevVerme */,
 				417F281D2982FE4700D4CA1A /* Main.storyboard */,
 				417F28202982FE4900D4CA1A /* Assets.xcassets */,
 				417F28222982FE4900D4CA1A /* LaunchScreen.storyboard */,
 				417F28252982FE4900D4CA1A /* Info.plist */,
 			);
 			path = Emlak2;
+			sourceTree = "<group>";
+		};
+		417F282D29832BED00D4CA1A /* Cikis */ = {
+			isa = PBXGroup;
+			children = (
+				417F282B298301A300D4CA1A /* CikisVc.swift */,
+			);
+			path = Cikis;
+			sourceTree = "<group>";
+		};
+		417F282E29832BF900D4CA1A /* Admin */ = {
+			isa = PBXGroup;
+			children = (
+				417F283D29832D9800D4CA1A /* AdminVc.swift */,
+			);
+			path = Admin;
+			sourceTree = "<group>";
+		};
+		417F282F29832C0400D4CA1A /* Anasayfa */ = {
+			isa = PBXGroup;
+			children = (
+				417F283B29832D7B00D4CA1A /* AnasayfaVc.swift */,
+				417F28442983315200D4CA1A /* AnasayfaCell.swift */,
+			);
+			path = Anasayfa;
+			sourceTree = "<group>";
+		};
+		417F283029832C1000D4CA1A /* Ekleme */ = {
+			isa = PBXGroup;
+			children = (
+				417F283929832D5600D4CA1A /* EklemeVc.swift */,
+			);
+			path = Ekleme;
+			sourceTree = "<group>";
+		};
+		417F283129832C2200D4CA1A /* Detay */ = {
+			isa = PBXGroup;
+			children = (
+				417F283729832D2A00D4CA1A /* DetayVc.swift */,
+			);
+			path = Detay;
+			sourceTree = "<group>";
+		};
+		417F283229832C3800D4CA1A /* Gorev */ = {
+			isa = PBXGroup;
+			children = (
+				417F283529832CE600D4CA1A /* GorevVc.swift */,
+			);
+			path = Gorev;
+			sourceTree = "<group>";
+		};
+		417F283329832C4A00D4CA1A /* Giris */ = {
+			isa = PBXGroup;
+			children = (
+				417F281B2982FE4700D4CA1A /* ViewController.swift */,
+			);
+			path = Giris;
+			sourceTree = "<group>";
+		};
+		417F283429832C9300D4CA1A /* GorevVerme */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GorevVerme;
+			sourceTree = "<group>";
+		};
+		417F283F29832DF400D4CA1A /* GorevVer */ = {
+			isa = PBXGroup;
+			children = (
+				417F284229832E5200D4CA1A /* GorevVerVc.swift */,
+			);
+			path = GorevVer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +234,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				417F283C29832D7B00D4CA1A /* AnasayfaVc.swift in Sources */,
+				417F283829832D2A00D4CA1A /* DetayVc.swift in Sources */,
+				417F282C298301A300D4CA1A /* CikisVc.swift in Sources */,
+				417F283629832CE600D4CA1A /* GorevVc.swift in Sources */,
+				417F284329832E5200D4CA1A /* GorevVerVc.swift in Sources */,
 				417F281C2982FE4700D4CA1A /* ViewController.swift in Sources */,
+				417F28452983315300D4CA1A /* AnasayfaCell.swift in Sources */,
+				417F283A29832D5600D4CA1A /* EklemeVc.swift in Sources */,
 				417F28182982FE4700D4CA1A /* AppDelegate.swift in Sources */,
+				417F283E29832D9800D4CA1A /* AdminVc.swift in Sources */,
 				417F281A2982FE4700D4CA1A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,6 +399,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,6 +428,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
