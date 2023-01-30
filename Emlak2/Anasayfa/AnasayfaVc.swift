@@ -9,11 +9,13 @@ import UIKit
 import Firebase
 
 
-class AnasayfaVc: UIViewController {
+class AnasayfaVc: UIViewController, UITableViewDelegate, UITableViewDataSource {
+
 
     
     @IBOutlet weak var curUserText: UILabel!
     
+    @IBOutlet weak var tableView: UITableView!
     var userDict = [String : String]()
     
     override func viewDidLoad() {
@@ -21,6 +23,27 @@ class AnasayfaVc: UIViewController {
 
         curUserText.text = ""
         getCurrentUser()
+        tableView.delegate = self
+        tableView.dataSource = self
+    
+    }
+    
+    
+    //TableView
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "anacell", for: indexPath) as! AnasayfaCell
+        cell.aciklaText.text = "merhaba dünyalı merkez akçayda"
+        cell.fiyatText.text = "1600000"
+        cell.odaText.text = "3+1"
+        cell.semtText.text = "Sarıkız"
+        
+        
+        return cell
     }
     
 
@@ -65,4 +88,5 @@ class AnasayfaVc: UIViewController {
 
 
 }
+
 

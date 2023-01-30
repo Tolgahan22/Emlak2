@@ -457,12 +457,12 @@
                                     <segue destination="VSM-KC-ZqI" kind="presentation" modalPresentationStyle="fullScreen" id="GTX-3q-rTx"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="7ZA-Iy-lnT">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="anacell" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="7ZA-Iy-lnT">
                                 <rect key="frame" x="16" y="153" width="361" height="616"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="132" id="crF-9F-4YL">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="anacell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="anacell" rowHeight="132" id="crF-9F-4YL" customClass="AnasayfaCell" customModule="Emlak2" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="361" height="132"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="crF-9F-4YL" id="poD-G7-WPt">
@@ -499,6 +499,12 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="aciklaText" destination="kg0-cQ-6Ru" id="5AD-xS-moo"/>
+                                            <outlet property="fiyatText" destination="rfx-Hq-7xk" id="UVc-uM-OYT"/>
+                                            <outlet property="odaText" destination="fvS-OH-QJi" id="8Wg-YM-eg9"/>
+                                            <outlet property="semtText" destination="BZY-Jq-tYh" id="Fk9-GE-goY"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -516,6 +522,7 @@
                     <tabBarItem key="tabBarItem" title="AnaSayfa" id="glq-2V-fgy"/>
                     <connections>
                         <outlet property="curUserText" destination="idF-bO-u4o" id="pqv-bn-rQ6"/>
+                        <outlet property="tableView" destination="7ZA-Iy-lnT" id="r8m-Kt-Llo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xTd-Op-IHt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -549,11 +556,11 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ADE-2C-IFo">
-                                <rect key="frame" x="16" y="247" width="172" height="93"/>
+                                <rect key="frame" x="16" y="247" width="171" height="93"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </pickerView>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qeg-12-0b8">
-                                <rect key="frame" x="196" y="247" width="174" height="93"/>
+                                <rect key="frame" x="195" y="247" width="174" height="93"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </pickerView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Ev Detay açıklama" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4c4-iZ-vvU">
