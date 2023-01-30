@@ -42,6 +42,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Giriş"/>
+                                <connections>
+                                    <action selector="loginButton:" destination="4dd-vz-dp8" eventType="touchUpInside" id="9Ca-A3-gfd"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kr1-W4-u25">
                                 <rect key="frame" x="191" y="553" width="75" height="35"/>
@@ -49,13 +52,17 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
                                 <connections>
-                                    <segue destination="v5y-VQ-qf6" kind="presentation" modalPresentationStyle="fullScreen" id="Iue-FE-MRK"/>
+                                    <segue destination="v5y-VQ-qf6" kind="presentation" identifier="toApp" modalPresentationStyle="fullScreen" id="Iue-FE-MRK"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="UUe-VE-e2x"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="emailText" destination="BDC-VX-3yE" id="KhD-WQ-5H2"/>
+                        <outlet property="passText" destination="hFN-bA-7ik" id="jFz-39-Qt0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hio-yj-PSk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -72,6 +79,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Çıkış" id="h7h-BD-mF6"/>
+                    <connections>
+                        <segue destination="4dd-vz-dp8" kind="presentation" identifier="toLogin" modalPresentationStyle="fullScreen" id="inV-wK-4Dn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -181,6 +191,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Görevler" id="61q-Bc-PNG"/>
+                    <connections>
+                        <outlet property="curUserText" destination="59v-2e-0cC" id="pKA-2W-bY0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g3A-kh-0Zd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -269,7 +282,7 @@
         <!--Admin-->
         <scene sceneID="yP7-m3-SMl">
             <objects>
-                <viewController id="Qu4-PG-rAS" sceneMemberID="viewController">
+                <viewController id="Qu4-PG-rAS" customClass="AdminVc" customModule="Emlak2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4L4-V1-3c4">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -285,6 +298,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="getNameText:" destination="nab-L5-UKF" eventType="editingDidEnd" id="bhd-4T-OCY"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cQB-ZE-uac">
                                 <rect key="frame" x="24" y="101" width="353" height="34"/>
@@ -322,8 +338,15 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Admin" id="wNQ-WS-Zfe"/>
+                    <connections>
+                        <outlet property="getEmailText" destination="cQB-ZE-uac" id="xgE-Vg-34N"/>
+                        <outlet property="getNameText" destination="LJb-Oe-Q2U" id="MYt-r8-6NZ"/>
+                        <outlet property="getPassText" destination="v6U-CB-cfG" id="iQa-rK-cOr"/>
+                        <outlet property="mapView" destination="tIH-9a-uSx" id="0Yy-ab-SIV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mcc-6e-s7V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="nab-L5-UKF" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="49.618320610687022" y="471.83098591549299"/>
         </scene>
@@ -491,6 +514,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="AnaSayfa" id="glq-2V-fgy"/>
+                    <connections>
+                        <outlet property="curUserText" destination="idF-bO-u4o" id="pqv-bn-rQ6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xTd-Op-IHt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -604,7 +630,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="LkO-O6-4Qt"/>
+        <segue reference="Iue-FE-MRK"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="labelColor">
