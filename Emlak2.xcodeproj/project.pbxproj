@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25E279C699130388663733FE /* Pods_Emlak2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C491FB6588498BE685FB753 /* Pods_Emlak2.framework */; };
+		413D88E129883A8C008033A9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 413D88E029883A8C008033A9 /* GoogleService-Info.plist */; };
 		417F28182982FE4700D4CA1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417F28172982FE4700D4CA1A /* AppDelegate.swift */; };
 		417F281A2982FE4700D4CA1A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417F28192982FE4700D4CA1A /* SceneDelegate.swift */; };
 		417F281C2982FE4700D4CA1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417F281B2982FE4700D4CA1A /* ViewController.swift */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0226057078106F344BBB03AB /* Pods-Emlak2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emlak2.release.xcconfig"; path = "Target Support Files/Pods-Emlak2/Pods-Emlak2.release.xcconfig"; sourceTree = "<group>"; };
+		413D88E029883A8C008033A9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		417F28142982FE4700D4CA1A /* Emlak2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emlak2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		417F28172982FE4700D4CA1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		417F28192982FE4700D4CA1A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +44,8 @@
 		417F283D29832D9800D4CA1A /* AdminVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminVc.swift; sourceTree = "<group>"; };
 		417F284229832E5200D4CA1A /* GorevVerVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GorevVerVc.swift; sourceTree = "<group>"; };
 		417F28442983315200D4CA1A /* AnasayfaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnasayfaCell.swift; sourceTree = "<group>"; };
+		8C491FB6588498BE685FB753 /* Pods_Emlak2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Emlak2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A55D6BE98442832E0055DB14 /* Pods-Emlak2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emlak2.debug.xcconfig"; path = "Target Support Files/Pods-Emlak2/Pods-Emlak2.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25E279C699130388663733FE /* Pods_Emlak2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +65,8 @@
 			children = (
 				417F28162982FE4700D4CA1A /* Emlak2 */,
 				417F28152982FE4700D4CA1A /* Products */,
+				8854E6D5C7BD400B307FE212 /* Pods */,
+				ECD3BADCE307365E8E974DD8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +96,7 @@
 				417F28202982FE4900D4CA1A /* Assets.xcassets */,
 				417F28222982FE4900D4CA1A /* LaunchScreen.storyboard */,
 				417F28252982FE4900D4CA1A /* Info.plist */,
+				413D88E029883A8C008033A9 /* GoogleService-Info.plist */,
 			);
 			path = Emlak2;
 			sourceTree = "<group>";
@@ -163,6 +173,23 @@
 			path = GorevVer;
 			sourceTree = "<group>";
 		};
+		8854E6D5C7BD400B307FE212 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A55D6BE98442832E0055DB14 /* Pods-Emlak2.debug.xcconfig */,
+				0226057078106F344BBB03AB /* Pods-Emlak2.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		ECD3BADCE307365E8E974DD8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C491FB6588498BE685FB753 /* Pods_Emlak2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -170,9 +197,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 417F28282982FE4900D4CA1A /* Build configuration list for PBXNativeTarget "Emlak2" */;
 			buildPhases = (
+				262BF0174CFD6B9BE49D1D97 /* [CP] Check Pods Manifest.lock */,
 				417F28102982FE4700D4CA1A /* Sources */,
 				417F28112982FE4700D4CA1A /* Frameworks */,
 				417F28122982FE4700D4CA1A /* Resources */,
+				EA6C94252E3A3EBA320BD68C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -222,12 +251,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				417F28242982FE4900D4CA1A /* LaunchScreen.storyboard in Resources */,
+				413D88E129883A8C008033A9 /* GoogleService-Info.plist in Resources */,
 				417F28212982FE4900D4CA1A /* Assets.xcassets in Resources */,
 				417F281F2982FE4700D4CA1A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		262BF0174CFD6B9BE49D1D97 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Emlak2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA6C94252E3A3EBA320BD68C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Emlak2/Pods-Emlak2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Emlak2/Pods-Emlak2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Emlak2/Pods-Emlak2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		417F28102982FE4700D4CA1A /* Sources */ = {
@@ -386,6 +458,7 @@
 		};
 		417F28292982FE4900D4CA1A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A55D6BE98442832E0055DB14 /* Pods-Emlak2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -415,6 +488,7 @@
 		};
 		417F282A2982FE4900D4CA1A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0226057078106F344BBB03AB /* Pods-Emlak2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

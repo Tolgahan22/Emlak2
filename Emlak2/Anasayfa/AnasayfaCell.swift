@@ -8,7 +8,16 @@
 import UIKit
 
 class AnasayfaCell: UITableViewCell {
-
+    
+    
+    @IBOutlet weak var aciklaText: UILabel!
+    
+    @IBOutlet weak var fiyatText: UILabel!
+    
+    @IBOutlet weak var semtText: UILabel!
+    
+    @IBOutlet weak var odaText: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
